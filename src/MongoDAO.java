@@ -12,6 +12,7 @@ public class MongoDAO {
 	public static void genieInsert(GenieVO vo) {
 		BasicDBObject obj = new BasicDBObject();
 		obj.put("songid", vo.getSongid());
+		obj.put("ymd", vo.getYmd());
 		obj.put("rank", vo.getRank());
 		obj.put("imgsrc", vo.getImgsrc());
 		obj.put("title", vo.getTitle());

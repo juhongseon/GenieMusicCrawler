@@ -39,6 +39,7 @@ public class MainClass {
 				Elements rows = doc.select("table.list-wrap tbody tr");
 				for(Element row : rows) {
 					GenieVO vo = new GenieVO();
+					vo.setYmd(Integer.parseInt(ymd));
 					
 					String songid = row.attr("songid");
 					System.out.println(songid);

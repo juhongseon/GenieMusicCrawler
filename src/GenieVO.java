@@ -1,11 +1,20 @@
 
 public class GenieVO {
+	private int ymd;
 	private int songid;
 	private int rank;
 	private String imgsrc;
 	private String title;
 	private String artist;
 	private String album;
+
+	public int getYmd() {
+		return ymd;
+	}
+
+	public void setYmd(int ymd) {
+		this.ymd = ymd;
+	}
 
 	public int getSongid() {
 		return songid;
